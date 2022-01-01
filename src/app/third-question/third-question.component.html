@@ -1,0 +1,134 @@
+<div fxLayout="column" fxLayoutAlign="center center" class="first-question">
+    <form [formGroup]="form">
+
+        <mat-card *ngIf="question1">
+            <mat-card-content>
+                <label>¿En qué circuito se disputó el primer Gran Premio de Fórmula 1?</label>
+                <mat-radio-group formControlName="question-1" (change)="question_1()">
+                    <mat-radio-button value="1">Monza</mat-radio-button>
+                    <mat-radio-button value="2">Silverstone</mat-radio-button>
+                    <mat-radio-button value="3">Mónaco</mat-radio-button>
+                    <mat-radio-button value="4">Spa</mat-radio-button>
+                </mat-radio-group>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card *ngIf="question2">
+            <mat-card-content>
+                <label>¿Quién fue el primer campeón del mundo de Fórmula 1?</label>
+                <mat-radio-group formControlName="question-2" (change)="question_2()">
+                    <mat-radio-button value="1">Giuseppe Farina</mat-radio-button>
+                    <mat-radio-button value="2">Juan Manuel Fangio</mat-radio-button>
+                    <mat-radio-button value="3">Alberto Ascari</mat-radio-button>
+                    <mat-radio-button value="4">Stirling Moss</mat-radio-button>
+                </mat-radio-group>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card *ngIf="question3">
+            <mat-card-content>
+                <label>Piloto más joven y más viejo en ganar un mundial de Fórmula 1:</label>
+                <mat-radio-group formControlName="question-3" (change)="question_3()">
+                    <mat-radio-button value="1">Vettel - Farina</mat-radio-button>
+                    <mat-radio-button value="2">Hamilton – Fangio </mat-radio-button>
+                    <mat-radio-button value="3">Vettel – Fangio </mat-radio-button>
+                    <mat-radio-button value="4">Hamilton – Farina </mat-radio-button>
+                </mat-radio-group>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card *ngIf="question4">
+            <mat-card-content>
+                <label>Circuito de F1 con el trazado más largo:</label>
+                <mat-radio-group formControlName="question-4" (change)="question_4()">
+                    <mat-radio-button value="1">Pescara</mat-radio-button>
+                    <mat-radio-button value="2">Nürburgring</mat-radio-button>
+                    <mat-radio-button value="3">Spa</mat-radio-button>
+                    <mat-radio-button value="4">Monza</mat-radio-button>
+                </mat-radio-group>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card *ngIf="question5">
+            <mat-card-content>
+                <label>¿Cuál de los siguientes pilotos es el más sancionado de la historia de la Fórmula 1?</label>
+                <mat-radio-group formControlName="question-5" (change)="question_5()">
+                    <mat-radio-button value="1">Verstappen</mat-radio-button>
+                    <mat-radio-button value="2">Senna</mat-radio-button>
+                    <mat-radio-button value="3">Hamilton</mat-radio-button>
+                    <mat-radio-button value="4">Schumacher</mat-radio-button>
+                </mat-radio-group>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card *ngIf="question6">
+            <mat-card-content>
+                <label>Circuito en el que se han disputado más Grandes Premios de F1:</label>
+                <mat-radio-group formControlName="question-6" (change)="question_6()">
+                    <mat-radio-button value="1">Monza</mat-radio-button>
+                    <mat-radio-button value="2">Mónaco</mat-radio-button>
+                    <mat-radio-button value="3">Silverstone</mat-radio-button>
+                    <mat-radio-button value="4">Se han disputado las mismas carreras en Monza y Silverstone</mat-radio-button>
+                </mat-radio-group>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card *ngIf="question7">
+            <mat-card-content>
+                <label>Número de padres e hijos campeones del mundo de Fórmula 1: </label>
+                <mat-radio-group formControlName="question-7" (change)="question_7()">
+                    <mat-radio-button value="1">1</mat-radio-button>
+                    <mat-radio-button value="2">4</mat-radio-button>
+                    <mat-radio-button value="3">3</mat-radio-button>
+                    <mat-radio-button value="4">2</mat-radio-button>
+                </mat-radio-group>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card *ngIf="question8">
+            <mat-card-content>
+                <label>¿Cuántos Grandes Premios disputó Alonso entre su podio del Gran Premio de Hungría de 2014 y el podio que logró esta temporada? </label>
+                <mat-radio-group formControlName="question-8" (change)="question_8()">
+                    <mat-radio-button value="1">146</mat-radio-button>
+                    <mat-radio-button value="2">123</mat-radio-button>
+                    <mat-radio-button value="3">108</mat-radio-button>
+                    <mat-radio-button value="4">114</mat-radio-button>
+                </mat-radio-group>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card *ngIf="question9">
+            <mat-card-content>
+                <label>Piloto más joven y más viejo en participar en un Gran Premio:</label>
+                <mat-radio-group formControlName="question-9" (change)="question_9()">
+                    <mat-radio-button value="1">Verstappen – Fangio</mat-radio-button>
+                    <mat-radio-button value="2">Vettel – Fangio</mat-radio-button>
+                    <mat-radio-button value="3">Verstappen - Chiron</mat-radio-button>
+                    <mat-radio-button value="4">Hamilton – Chiron</mat-radio-button>
+                </mat-radio-group>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card *ngIf="question10">
+            <mat-card-content>
+                <label>¿Cuál de estos pilotos ha logrado más poles? </label>
+                <mat-radio-group formControlName="question-10" (change)="question_10()">
+                    <mat-radio-button value="1">Niki Lauda </mat-radio-button>
+                    <mat-radio-button value="2">Mika Häkkinen </mat-radio-button>
+                    <mat-radio-button value="3">Fernando Alonso </mat-radio-button>
+                    <mat-radio-button value="4">Kimi Räikkönen </mat-radio-button>
+                </mat-radio-group>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card *ngIf="question11">
+            <mat-card-content>
+                <label>¿Crees en El Plan?</label>
+                <mat-radio-group formControlName="question-11" (change)="question_11()">
+                    <mat-radio-button value="1">Sí</mat-radio-button>
+                    <mat-radio-button value="2">No, soy un sojas </mat-radio-button>
+                </mat-radio-group>
+            </mat-card-content>
+        </mat-card>
+    </form>
+</div>

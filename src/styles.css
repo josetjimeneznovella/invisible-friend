@@ -1,1 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #3f51b5;}
+
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+mat-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+  
+mat-radio-button {
+    margin: 5px;
+}
+
+mat-icon {
+    cursor: pointer;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+
+
+snack-bar-container.mat-snack-bar-container-error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+snack-bar-container.mat-snack-bar-container-success .mat-button-wrapper {
+    color: #721c24;
+}
+
+snack-bar-container.mat-snack-bar-container-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+snack-bar-container.mat-snack-bar-container-success .mat-button-wrapper {
+    color: #155724;
+}
+
+@media only screen and (max-width: 800px) {
+    .first-question .mat-card {
+    
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .first-question .mat-card {
+    
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 50%;
+    }
+}
+
+
+.mat-card-title {
+    text-align: center;
+}
+
+
+
+.buttons button {
+    margin: 0 20px 20px 0;
+}
+
+.form {
+    padding: 20px 5px 0 5px;
+}

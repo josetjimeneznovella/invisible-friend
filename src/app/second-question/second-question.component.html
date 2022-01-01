@@ -1,0 +1,23 @@
+<div fxLayout="column" fxLayoutAlign="center center" class="first-question">
+    <mat-card>
+        <img mat-card-image src="assets/images/second-question-small.png" >
+        <mat-card-content>
+            <form [formGroup]="form" (ngSubmit)="submit()">
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Introduce clave de acceso</mat-label>
+                    <input matInput formControlName="password" [type]="isHiddingPassword ? 'password' : 'text'">
+                    <button mat-icon-button matSuffix (click)="isHiddingPassword = !isHiddingPassword" color="primary">
+                        <mat-icon>{{isHiddingPassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+                <div fxLayout="column">
+                    <button mat-raised-button color="primary">Siguiente</button>
+                </div>
+                <div *ngIf="isShowingLoading">
+                    <app-spinner></app-spinner>
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
